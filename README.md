@@ -1,24 +1,9 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+This is just a simple ruby on rails application that uses rails5 Action Cable feature to
+communicate with Google Dialogflow API and provides live chatting experience.
 
-Things you may want to cover:
+- Ruby version  : **ruby 2.5.1p57** 
+- Rails version : **Rails 5.2.2**
 
-* Ruby version
-
-* System dependencies
-
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+Update diagloflow fulfillment url before starting server.
