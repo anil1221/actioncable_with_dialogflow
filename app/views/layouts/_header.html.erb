@@ -1,0 +1,13 @@
+<div class="header">
+  <a href="/" class="logo">DialogFlow with ActionCable</a>
+  <div class="header-right">
+    <a class="active" href="/">Home</a>
+    <% if current_user %>
+      <a href="/logout">Logout</a>
+    <% else %>
+      <a href="/login">Login</a>
+      <a href="/users/new">Signup</a>
+    <% end %>
+
+  </div>
+</div>

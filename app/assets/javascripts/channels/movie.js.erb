@@ -1,0 +1,22 @@
+(function() {
+    App.movie = App.cable.subscriptions.create("MovieChannel", {
+        connected: function() {},
+        disconnected: function() {},
+        received: function(data) {
+            console.log(data);
+            return $('.new_message').append('<p>' + data['message'] + '</p>');
+        },
+        movies: function(message) {
+            return this.perform('movies', {
+                message: message
+            });
+        }
+    }, $(document).on('keypress', '[data-behavior~=movie_speaker]', function(event) {
+        if (event.keyCode === 13) {
+            App.movie.movies(event.target.value);
+            event.target.value = '';
+            return event.preventDefault();
+        }
+    }));
+
+}).call(this);

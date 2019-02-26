@@ -1,0 +1,10 @@
+<div class="container chat-container">
+  <div class="row message-area">
+    <div id="messages" class="col-md-12">
+      <%= render 'rooms/message', locale: {messages: @messages} if @messages.present? %>
+    </div>
+  </div>
+  <div class="message-text">
+    <textarea name="message" rows="2" class="form-control userip" data-behavior="room_speaker" placeholder="Type here..."></textarea>
+  </div>
+</div>

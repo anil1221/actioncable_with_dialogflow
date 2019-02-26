@@ -1,0 +1,105 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, or any plugin's
+ * vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ *= header_styles
+ */
+
+
+body, html {
+    height: 100%;
+    width: 100%;
+}
+
+.chat-container {
+    border: 2px solid #495057;
+    margin: 10px;
+    height: 82%;
+}
+
+.message-area {
+    overflow-y: scroll;
+    height: 90%;
+    background-image: url("bg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.message-text {
+    border-top: 2px solid #CCCCCC;
+    height: 10%;
+}
+
+textarea.form-control {
+    border: none;
+    height: 3rem !important;
+}
+
+.time-left {
+    float: left;
+    color: #999;
+}
+
+.container.chat {
+    border: 2px solid #dedede;
+    background-color: #f1f1f1;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    float: left;
+}
+
+.container.chat.darker {
+    border-color: #ccc;
+    background-color: #ddd;
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+    float: right;
+}
+
+/* Sessions Styles*/
+.login-page{
+    height: 87%;
+    width: 100%;
+    background-color: #CCCCCC;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+.lp-fr{
+    padding: 45px;
+    border: 1px solid #CCCCCC;
+    border-radius: 5px;
+    background-color: #fff;
+}
+
+/* Index page Styles*/
+.index-page{
+    height: 87%;
+    width: 100%;
+    background-image: url("actioncable.png");
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    background-position: center;
+}
+
+.signup-page{
+    height: 87%;
+    width: 100%;
+    background-color: #CCCCCC;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}

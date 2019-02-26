@@ -1,0 +1,13 @@
+<% @messages.each do |message| %>
+  <% if message.user_name.eql?('Bot') %>
+    <div class="container chat col-md-6">
+      <b><%= message.user_name %>:</b> <%= eval(message.content)[:result][:fulfillment][:speech] %>
+<!--      <span><%#=message.created_at.strftime("%I:%M%p") %></span>-->
+    </div>
+  <% else %>
+    <div class="container chat darker col-md-6">
+      <b><%= message.user_name %>:</b><%= message.content %>
+<!--      <span><%#=message.created_at.strftime("%I:%M%p") %></span>-->
+    </div>
+  <% end %>
+<% end %>
